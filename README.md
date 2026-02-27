@@ -315,3 +315,5 @@ It reflects engineering methodology rather than trial-and-error implementation.
 ## 16. Hardware Schematic
 
 The complete circuit schematic, including RC debounce network and wiring configuration, is available here:
+
+**Copyright:** (c) 2026 Ali-Sbeity
