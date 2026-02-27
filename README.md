@@ -31,7 +31,10 @@ Although functionally simple, this project is intentionally designed as a reliab
 
 ## 2. Demonstration Vedio
 
-A short demonstration of the system in operation is available here:
+A short demonstration of the system in operation is available here:  
+[LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_this-video-presents-one-of-the-initial-foundation-activity-7433290636637925376-qs_b?utm_source=share&utm_medium=member_android&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c)  
+
+[Youtube]()
 
 The video shows:
 - Simultaneous button activation
@@ -46,7 +49,7 @@ The video shows:
 
 
 - Two buttons must be pressed simultaneously.
-- LED turns ON for 5 seconds.
+- LED turns ON for 5 sec)onds.
 - LED turns OFF automatically after 5 seconds.
 - No retriggering while buttons remain pressed.
 - System returns to IDLE only after both buttons are released.
