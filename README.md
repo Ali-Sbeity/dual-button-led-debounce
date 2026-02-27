@@ -317,4 +317,5 @@ It reflects engineering methodology rather than trial-and-error implementation.
 
 The complete circuit schematic, including RC debounce network and wiring configuration, is available here:
 
-**Copyright:** (c) 2026 Ali-Sbeity
+**Copyright:** (c) 2026 Ali-Sbeity  
+**License:** MIT License
