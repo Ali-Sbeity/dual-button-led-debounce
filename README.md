@@ -34,7 +34,7 @@ The video shows:
 
 
 ## 3. System Specification
-# Functional Requirements
+### Functional Requirements
 
 - Two buttons must be pressed simultaneously.
 - LED turns ON for 5 seconds.
@@ -62,7 +62,7 @@ During state transitions, the signal oscillates rapidly:
 Without filtering, the MCU may interpret a single press as multiple events.
 
 ## 6. Hardware Debounce Design (RC Filter)
-# 6.1 Time Constant
+### 6.1 Time Constant
 
 The RC time constant:  
 
@@ -78,7 +78,7 @@ t = τ
 
 Voltage changes approximately 63% toward its final value.
 
-# 6.2 Internal Pull-up Consideration
+### 6.2 Internal Pull-up Consideration
 
 The system uses the internal pull-up resistor of:
 Arduino Uno (ATmega328P)
@@ -89,7 +89,7 @@ R(pull-up) = 20KΩ to 50KΩ
 This introduces significant tolerance variation.
 
 
-# 6.3 Capacitor Selection
+### 6.3 Capacitor Selection
 
 Chosen capacitor:
 
@@ -176,7 +176,7 @@ States:
 - LED_ON
 - WAIT_RELEASE
 
-# State Transitions
+### State Transitions
 IDLE → LED_ON
 When both buttons stable LOW
 
