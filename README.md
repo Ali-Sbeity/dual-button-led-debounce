@@ -1,4 +1,11 @@
 # dual-button-led-debounce
+
+
+**Author:** Ali-Sbeity  
+**Version:** 1.0  
+**Copyright:** (c) 2026 Ali-Sbeity  
+**License:** MIT License
+
 Simultaneous dual button LED control with hardware (RC) and software debounce, FSM based logic, and 5-second timed activation
 
 
