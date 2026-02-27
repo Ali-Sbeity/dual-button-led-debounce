@@ -41,9 +41,7 @@ The video shows:
 
 
 ## 4. System-Level Architecture
-Button1 ──► RC Filter ──► Software Debounce ─┐
-                                              ├──► FSM ───► Timer ───► LED
-Button2 ──► RC Filter ──► Software Debounce ─┘
+
 
 This layered architecture increases robustness:
 - Hardware layer reduces high-frequency noise.
