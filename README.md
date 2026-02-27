@@ -58,7 +58,7 @@ RC1 --> Debounce1[Debounce]
 RC2 --> Debounce2[Debounce]  
 
 %%FSM  
-Debounce1 --> FSM[FSM Logic]  
+Debounce1 --> FSM
 Debounce2 --> FSM  
 
 %% Timer and LED
