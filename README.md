@@ -9,9 +9,9 @@ Simultaneous dual button LED control with hardware (RC) and software debounce, F
 
 
 
-**Author:** Ali-Sbeity  
+**Author:** Ali Sbeity  
 **Version:** 1.0  
-**Copyright:** (c) 2026 Ali-Sbeity  
+**Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License  
 
 
@@ -326,5 +326,5 @@ It reflects engineering methodology rather than trial-and-error implementation.
 
 The complete circuit schematic, including RC debounce network and wiring configuration, is available here:
 
-**Copyright:** (c) 2026 Ali-Sbeity  
+**Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License
