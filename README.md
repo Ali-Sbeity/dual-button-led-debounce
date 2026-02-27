@@ -322,7 +322,8 @@ It reflects engineering methodology rather than trial-and-error implementation.
 
 ## 16. Hardware Schematic
 
-The complete circuit schematic, including RC debounce network and wiring configuration, is available here:
+The complete circuit schematic, including RC debounce network and wiring configuration, is available here: [schematic](https://github.com/Ali-Sbeity/dual-button-led-debounce/blob/main/schematic.png)
+
 
 **Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License
