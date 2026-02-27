@@ -49,21 +49,22 @@ The video shows:
 ## 4. System-Level Architecture
 
 ```mermaid
-flowchart LR
-%% Input buttons  
-Button1[Button 1] --> RC1[RC Filter]  
-Button2[Button 2] --> RC2[RC Filter]  
-%% Debounce stage  
-RC1 --> Debounce1[Debounce]  
-RC2 --> Debounce2[Debounce]  
-
-%%FSM  
-Debounce1 --> FSM
-Debounce2 --> FSM  
-
-%% Timer and LED
-FSM --> Timer [5-second Timer]
-Timer --> LED[LED output]
+flowchart LR  
+    %% Input buttons  
+    Button1[Button 1] --> RC1[RC Filter]  
+    Button2[Button 2] --> RC2[RC Filter]  
+  
+    %% Debounce stage  
+    RC1 --> Debounce1[Debounce]  
+    RC2 --> Debounce2[Debounce]  
+  
+    %% FSM  
+    Debounce1 --> FSM[FSM Logic]  
+    Debounce2 --> FSM  
+  
+    %% Timer and LED  
+    FSM --> Timer[5-second Timer]  
+    Timer --> LED[LED Output]
 ```
 This layered architecture increases robustness:
 - Hardware layer reduces high-frequency noise.
