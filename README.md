@@ -62,8 +62,11 @@ Without filtering, the MCU may interpret a single press as multiple events.
 # 5.1 Time Constant
 The RC time constant:  
 τ = RC  
+
 voltage response (discharge model):  
 v(t) = v0 e^{-t/RC}  
+
 At:  
 t = τ  
+
 Voltage changes approximately 63% toward its final value.
