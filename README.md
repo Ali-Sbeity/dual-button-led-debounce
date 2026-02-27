@@ -26,6 +26,7 @@ Although functionally simple, this project is intentionally designed as a reliab
 ## 2. Demonstration Vedio
 
 A short demonstration of the system in operation is available here:
+
 The video shows:
 - Simultaneous button activation
 - Stable LED triggering
