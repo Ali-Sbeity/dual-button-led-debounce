@@ -198,7 +198,8 @@ The system is edge-triggered with lockout protection.
 
 Below is a simplified excerpt of the state machine implementation demonstrating deterministic behavior and retrigger protection:
 
-``cp
+```cp
+
 switch (currentState) {
 
   case IDLE:
@@ -225,7 +226,7 @@ switch (currentState) {
     }
     break;
 }
-``
+```
 
 Full source code:
 
