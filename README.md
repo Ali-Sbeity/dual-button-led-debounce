@@ -37,6 +37,18 @@ The video shows:
 ## 3. System Specification
 ### Functional Requirements
 
+
+
+- Two buttons must be pressed simultaneously.
+- LED turns ON for 5 seconds.
+- LED turns OFF automatically after 5 seconds.
+- No retriggering while buttons remain pressed.
+- System returns to IDLE only after both buttons are released.
+
+
+## 4. System-Level Architecture
+
+```mermaid
 flowchart LR
 %% Input buttons  
 Button1[Button 1] --> RC1[RC Filter]  
@@ -52,18 +64,7 @@ Debounce2 --> FSM
 %% Timer and LED
 FSM --> Timer [5-second Timer]
 Timer --> LED[LED output]
-
-
-
-- Two buttons must be pressed simultaneously.
-- LED turns ON for 5 seconds.
-- LED turns OFF automatically after 5 seconds.
-- No retriggering while buttons remain pressed.
-- System returns to IDLE only after both buttons are released.
-
-
-## 4. System-Level Architecture
-
+```
 This layered architecture increases robustness:
 - Hardware layer reduces high-frequency noise.
 - Software layer confirms stable logical transitions.
