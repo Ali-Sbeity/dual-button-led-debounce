@@ -1,8 +1,8 @@
 /*****************************************
 * Project: Simultaneous Dual-Button LED Activation with Hardware & Software Debounce
-* Author: Ali-Sbeity
+* Author: Ali Sbeity
 * Version: 1.0
-* Copyright (c) 2026 Ali-Sbeity
+* Copyright (c) 2026 Ali Sbeity
 * License: MIT License
 ********************************/
 
@@ -117,5 +117,6 @@ void loop() {
   }
 }
 
-// Copyright (c) 2026 Ali-Sbeity  
+// Copyright (c) 2026 Ali Sbeity  
 // License: MIT License
+
