@@ -257,7 +257,16 @@ switch (currentState) {
 }
 ```
 
-Full source code:
+## Full source code:  
+
+The complete Arduino sketch for this project is provided below.  
+You can view or download the code from the file: [dual_button.ino](https://github.com/Ali-Sbeity/dual-button-led-debounce/blob/main/dual_button.ino)
+
+The code includes:  
+- Reading input from two push-buttons
+- RC filter and software debounce implementation
+- FSM logic for Synchronized LED activation
+- 5-second timer control for the LED
 
 
 ## 12. Non-Blocking Timing
