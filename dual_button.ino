@@ -116,3 +116,6 @@ void loop() {
       break;
   }
 }
+
+// Copyright (c) 2026 Ali-Sbeity  
+// License: MIT License
