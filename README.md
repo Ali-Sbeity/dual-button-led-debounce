@@ -37,6 +37,24 @@ The video shows:
 ## 3. System Specification
 ### Functional Requirements
 
+flowchart LR
+%% Input buttons  
+Button1[Button 1] --> RC1[RC Filter]  
+Button2[Button 2] --> RC2[RC Filter]  
+%% Debounce stage  
+RC1 --> Debounce1[Debounce]  
+RC2 --> Debounce2[Debounce]  
+
+%%FSM  
+Debounce1 --> FSM[FSM Logic]  
+Debounce2 --> FSM  
+
+%% Timer and LED
+FSM --> Timer [5-second Timer]
+Timer --> LED[LED output]
+
+
+
 - Two buttons must be pressed simultaneously.
 - LED turns ON for 5 seconds.
 - LED turns OFF automatically after 5 seconds.
