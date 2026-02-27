@@ -7,10 +7,12 @@ Simultaneous dual button LED control with hardware (RC) and software debounce, F
 
 ### A Robust Embedded Input Handling Case Study
 
+
 **Author:** Ali-Sbeity  
 **Version:** 1.0  
 **Copyright:** (c) 2026 Ali-Sbeity  
 **License:** MIT License
+
 
 ## 1. Project Overview
 
