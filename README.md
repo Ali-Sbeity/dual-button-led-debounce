@@ -61,5 +61,9 @@ Without filtering, the MCU may interpret a single press as multiple events.
 ## 6. Hardware Debounce Design (RC Filter)
 # 5.1 Time Constant
 The RC time constant:
-
-First-order RC filter transfer function:
+τ = RC
+voltage response (discharge model):
+v(t) = v0 e^{-t/RC}
+At:
+t = τ
+Voltage changes approximately 63% toward its final value.
