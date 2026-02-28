@@ -13,7 +13,7 @@ Simultaneous dual button LED control with hardware (RC) and software debounce, F
 ### A Robust Embedded Input Handling Case Study  
 
 
-## 1. Project Overview
+## Project Overview
 
 This project implements a synchronized dual-button activation system using an Arduino-based microcontroller.
 
@@ -29,7 +29,7 @@ Although functionally simple, this project is intentionally designed as a reliab
 - Frequency-domain reasoning
 
 
-## 2. Demonstration Vedio
+## Demonstration Vedio
 
 A short demonstration of the system in operation is available here:  
 [LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_this-video-presents-one-of-the-initial-foundation-ugcPost-7433305125256941568-KvtH?utm_source=share&utm_medium=member_android&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c)  
@@ -43,7 +43,7 @@ The video shows:
 - Retrigger prevention behavior
 
 
-## 3. System Specification
+## System Specification
 ### Functional Requirements
 
 - Two buttons must be pressed simultaneously.
@@ -53,7 +53,7 @@ The video shows:
 - System returns to IDLE only after both buttons are released.
 
 
-## 4. System-Level Architecture
+## System-Level Architecture
 
 ```mermaid
 flowchart LR  
@@ -79,7 +79,7 @@ This layered architecture increases robustness:
 - FSM guarantees deterministic system behavior.
 
 
-## 5. Mechanical Bounce Analysis
+## Mechanical Bounce Analysis
 
 Mechanical push-buttons typically exhibit bounce durations of:
 5 ms to 20 ms
@@ -89,8 +89,8 @@ During state transitions, the signal oscillates rapidly:
 
 Without filtering, the MCU may interpret a single press as multiple events.
 
-## 6. Hardware Debounce Design (RC Filter)
-### 6.1 Time Constant
+## Hardware Debounce Design (RC Filter)
+### Time Constant
 
 The RC time constant:  
 
@@ -106,7 +106,7 @@ t = τ
 
 Voltage changes approximately 63% toward its final value.
 
-### 6.2 Internal Pull-up Consideration
+### Internal Pull-up Consideration
 
 The system uses the internal pull-up resistor of:
 Arduino Uno (ATmega328P)
@@ -117,7 +117,7 @@ R(pull-up) = 20KΩ to 50KΩ
 This introduces significant tolerance variation.
 
 
-### 6.3 Capacitor Selection
+### Capacitor Selection
 
 Chosen capacitor:
 
@@ -146,7 +146,7 @@ Therefore, the selected 100nF capacitor safely covers the bounce interval even u
 This is a tolerance-aware hardware design decision, not an arbitrary component choice.
 
 
-## 7. Digital Threshold Consideration
+## Digital Threshold Consideration
 
 Digital input switching thresholds are approximately:
 
@@ -167,7 +167,7 @@ Meaning logic transition occurs near one τ — not at 5τ.
 This reinforces that RC filtering effectively suppresses short bounce spikes.
 
 
-## 8. Frequency-Domain Perspective
+## Frequency-Domain Perspective
 
 First-order RC filter transfer function:
 
@@ -188,7 +188,7 @@ Bounce oscillations often contain components in the hundreds of Hz range.
 Thus, the RC filter significantly attenuates high-frequency bouncing.
 
 
-## 9. Software Debounce
+## Software Debounce
 
 A time-based digital debounce algorithm confirms signal stability for 50ms before updating logical state.
 
@@ -197,7 +197,7 @@ This acts as a discrete-time low-pass filter on binary input signals.
 Software debounce complements hardware filtering, forming a layered robustness strategy.
 
 
-## 10. Finite State Machine (FSM) Design
+## Finite State Machine (FSM) Design
 
 States:
 - IDLE
@@ -222,7 +222,7 @@ This prevents:
 The system is edge-triggered with lockout protection.
 
 
-## 11. FSM Implementation Snippet
+## FSM Implementation Snippet
 
 Below is a simplified excerpt of the state machine implementation demonstrating deterministic behavior and retrigger protection:
 
@@ -268,7 +268,7 @@ The code includes:
 - 5-second timer control for the LED
 
 
-## 12. Non-Blocking Timing
+## Non-Blocking Timing
 
 Instead of using delay(5000), the system uses:
 
@@ -281,7 +281,7 @@ This allows:
 - Deterministic timing behavior
 
 
-## 13. Design Philosophy
+## Design Philosophy
 
 This project demonstrates:
 - Quantitative hardware design
@@ -293,7 +293,7 @@ This project demonstrates:
 - Embedded software architecture discipline
 
 
-## 14. Why This Is More Than “LED with Two Buttons”
+## Why This Is More Than “LED with Two Buttons”
 
 Although simple in functionality, the project illustrates:
 
@@ -302,7 +302,7 @@ Reliable embedded input system design under uncertainty.
 It is intentionally structured as a mini embedded systems engineering case study rather than a beginner microcontroller exercise.
 
 
-## 15. Hardware Summary
+## Hardware Summary
 
 - Arduino Uno (ATmega328P)
 - Internal pull-up resistors
@@ -310,7 +310,7 @@ It is intentionally structured as a mini embedded systems engineering case study
 - LED with current-limiting resistor
 
 
-## 16. Conclusion
+## Conclusion
 
 This project demonstrates how even a basic digital interaction can be transformed into a robust, analytically justified embedded system through:
 - Mathematical modeling
@@ -321,7 +321,7 @@ This project demonstrates how even a basic digital interaction can be transforme
 It reflects engineering methodology rather than trial-and-error implementation.
 
 
-## 17. Hardware Schematic
+## Hardware Schematic
 
 The complete circuit schematic, including RC debounce network and wiring configuration, is available here: [schematic](https://github.com/Ali-Sbeity/dual-button-led-debounce/blob/main/schematic.png)
 
