@@ -34,7 +34,7 @@ Although functionally simple, this project is intentionally designed as a reliab
 A short demonstration of the system in operation is available here:  
 [LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_this-video-presents-one-of-the-initial-foundation-ugcPost-7433305125256941568-KvtH?utm_source=share&utm_medium=member_android&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c)  
 
-[Youtube]()
+[Youtube](https://youtube.com/shorts/VHrAkLY_VjY?si=Tn8KCTUbMnPu65Ma)
 
 The video shows:
 - Simultaneous button activation
@@ -46,12 +46,10 @@ The video shows:
 ## 3. System Specification
 ### Functional Requirements
 
-
-
 - Two buttons must be pressed simultaneously.
 - LED turns ON for 5 sec)onds.
 - LED turns OFF automatically after 5 seconds.
-- No retriggering while buttons remain pressed.
+- No retriggering whilehttps://youtube.com/shorts/VHrAkLY_VjY?si=Tn8KCTUbMnPu65Ma buttons remain pressed.
 - System returns to IDLE only after both buttons are released.
 
 
