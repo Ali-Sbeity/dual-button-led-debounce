@@ -32,7 +32,7 @@ Although functionally simple, this project is intentionally designed as a reliab
 ## 2. Demonstration Vedio
 
 A short demonstration of the system in operation is available here:  
-[LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_this-video-presents-one-of-the-initial-foundation-activity-7433290636637925376-qs_b?utm_source=share&utm_medium=member_android&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c)  
+[LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_this-video-presents-one-of-the-initial-foundation-ugcPost-7433305125256941568-KvtH?utm_source=share&utm_medium=member_android&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c)  
 
 [Youtube]()
 
