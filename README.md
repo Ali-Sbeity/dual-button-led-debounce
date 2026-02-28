@@ -293,7 +293,7 @@ This project demonstrates:
 - Embedded software architecture discipline
 
 
-## 13. Why This Is More Than “LED with Two Buttons”
+## 14. Why This Is More Than “LED with Two Buttons”
 
 Although simple in functionality, the project illustrates:
 
@@ -302,7 +302,7 @@ Reliable embedded input system design under uncertainty.
 It is intentionally structured as a mini embedded systems engineering case study rather than a beginner microcontroller exercise.
 
 
-## 14. Hardware Summary
+## 15. Hardware Summary
 
 - Arduino Uno (ATmega328P)
 - Internal pull-up resistors
@@ -310,7 +310,7 @@ It is intentionally structured as a mini embedded systems engineering case study
 - LED with current-limiting resistor
 
 
-## 15. Conclusion
+## 16. Conclusion
 
 This project demonstrates how even a basic digital interaction can be transformed into a robust, analytically justified embedded system through:
 - Mathematical modeling
@@ -321,7 +321,7 @@ This project demonstrates how even a basic digital interaction can be transforme
 It reflects engineering methodology rather than trial-and-error implementation.
 
 
-## 16. Hardware Schematic
+## 17. Hardware Schematic
 
 The complete circuit schematic, including RC debounce network and wiring configuration, is available here: [schematic](https://github.com/Ali-Sbeity/dual-button-led-debounce/blob/main/schematic.png)
 
